@@ -187,28 +187,21 @@ html {
     font-family: webflow-icons !important;
   }
   
-  .w-icon-slider-right:before {
-    content: "î˜€";
-  }
-  
-  .w-icon-slider-left:before {
-    content: "î˜";
-  }
-  
-  .w-icon-nav-menu:before {
-    content: "î˜‚";
-  }
-  
-  .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-    content: "î˜ƒ";
-  }
-  
-  .w-icon-file-upload-remove:before {
-    content: "î¤€";
-  }
-  
+  .w-icon-slider-right:before,
+  .w-icon-slider-left:before,
+  .w-icon-nav-menu:before,
+  .w-icon-arrow-down:before,
+  .w-icon-dropdown-toggle:before,
+  .w-icon-file-upload-remove:before,
   .w-icon-file-upload-icon:before {
-    content: "î¤ƒ";
+      content: "";
+      display: inline-block;
+      width: 30px;  /* Adjust width as necessary */
+      height: 30px; /* Adjust height as necessary */
+      background-image: url('/RESOURCES/menu.svg');  /* Path to your image */
+      background-size: cover; /* Ensures the image fits the element */
+      background-repeat: no-repeat;
+      background-position: center;
   }
   
   * {
