@@ -12,6 +12,11 @@ document.getElementById('wf-form-Design-To-Webflow-Form').addEventListener('subm
 
     try {
         // Send the form data to the URL using Fetch API
+        const honeypot = formObject['honeypot'];
+        if (honeypot) {
+            console.error('Bot detected.');
+            return; // Abort the submission
+        }
         const response = await fetch('https://hook.us2.make.com/ruqaaec1arl46re4o9teozvjwxkow4ez', {
             method: 'POST',
             headers: {
@@ -34,4 +39,7 @@ document.getElementById('wf-form-Design-To-Webflow-Form').addEventListener('subm
         document.querySelector('#error-message').style.display = 'block';
         console.error('Form submission error:', error);
     }
+   
+
+
 });
