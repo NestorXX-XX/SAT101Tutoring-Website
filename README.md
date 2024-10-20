@@ -57,7 +57,3 @@ Our business model is built around providing affordable, high-quality SAT tutori
 For any questions or inquiries, please visit our website or contact us at:
 - **Website**: [sat101tutoring.com](https://sat101tutoring-cd9f7b.webflow.io)
 - **Email**: contact@sat101tutoring.com
-
-## 📜 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
