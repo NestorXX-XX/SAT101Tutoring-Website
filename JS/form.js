@@ -17,6 +17,8 @@ document.getElementById('wf-form-Design-To-Webflow-Form').addEventListener('subm
             console.error('Bot detected.');
             return; // Abort the submission
         }
+        formObject.timestamp = new Date().toISOString(); // ISO format timestamp
+
         const response = await fetch('https://hook.us2.make.com/ruqaaec1arl46re4o9teozvjwxkow4ez', {
             method: 'POST',
             headers: {
@@ -24,6 +26,7 @@ document.getElementById('wf-form-Design-To-Webflow-Form').addEventListener('subm
             },
             body: JSON.stringify(formObject)
         });
+        
 
         if (response.ok) {
             // Show the success message if the form is submitted successfully

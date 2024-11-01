@@ -73,18 +73,23 @@
                             <h4 class="text-white text-centred margin-xl">First, tell us about yourself<br /></h4>
                             <div class="w-layout-grid form-2-col">
                                 <div class="margin-xs">
-                                    <label for="name" class="field-label">Your Name*</label>
+                                    <label for="name" class="field-label">Name*</label>
                                     <input class="text-field margin-s w-input" maxlength="256" name="name"
                                            placeholder="Name" type="text" id="name" required />
                                 </div>
+                                <div class="margin-xs">
+                                    <label for="last_name" class="field-label">Last Name*</label>
+                                    <input class="text-field margin-s w-input" maxlength="256" name="last_name"
+                                           placeholder="Last Name" type="text" id="last_name" required />
+                                </div>
+                            </div>
+                            <div class="w-layout-grid form-2-col">
                                 <div class="margin-xs">
                                     <label for="Email" class="field-label">Email*</label>
                                     <input class="text-field margin-s w-input" maxlength="256" name="Email"
                                            placeholder="email@gmail.com" type="email" id="Email" required />
                                     <input type="text" name="honeypot" style="display:none;" tabindex="-1">
                                 </div>
-                            </div>
-                            <div class="w-layout-grid form-2-col">
                                 <div class="margin-xs">
                                     <label for="field" class="field-label">Relation*</label>
                                     <select id="field" name="field" required class="select-field w-select">
