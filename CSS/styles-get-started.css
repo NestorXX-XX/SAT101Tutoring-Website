@@ -3380,6 +3380,9 @@ html {
   }
   
   @media screen and (max-width: 991px) {
+    #remove-later {
+      display:none
+    }
     .nav-container {
       padding-top: 15px;
     }
