@@ -224,7 +224,7 @@ html {
   
   img {
     vertical-align: middle;
-    max-width: 100%;
+    
     display: inline-block;
   }
   
@@ -3843,7 +3843,7 @@ html {
       display: inline;
     }
   
-    .image-11 {
+    .image-11, .image-12 {
       max-width: 130%;
     }
   }
